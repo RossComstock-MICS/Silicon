@@ -189,11 +189,6 @@
               </a>
             </div>      
           </div>
-          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-            <input type="checkbox" class="form-check-input" id="theme-mode">
-            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
-            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
-          </div>
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -517,7 +512,9 @@
         <div class="row pb-lg-1">
         </div>
         <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-          <h6><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Disclaimer</a></h6>
+          <!-- Toggle popover on click (click is default trigger) -->
+          <button type="button" class="btn btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="This website is for educational purposes only and does not render professional services - it is not a substitute for dedicated professional services from a cybersecurity professional. There is no endorsement of any kind for products or services listed on this website - It is your responsibility to conduct appropriate due diligence and due care in selecting and engaging with a product or service in your implementation of the CMMC practices and processes.">Disclaimer</button>
+          <h6></h6>
           <span class="text-light opacity-50">&copy; Copyright © 2023 SecuritySage </span>
         </p>
       </div>
