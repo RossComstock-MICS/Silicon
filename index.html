@@ -6,8 +6,8 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="SecuritySage - CMMC Compliance">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+    <meta name="keywords" content="bootstrap, business, app showcase, saas, security, DoD, CMMC, compliance, RPO, R">
+    <meta name="author" content="SecuritySage">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -142,11 +142,12 @@
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
     <main class="page-wrapper">
 
+
       <!-- Navbar -->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm shadow-dark-mode-none navbar-sticky">
         <div class="container px-3">
-          <a href="index.html" class="navbar-brand pe-3">
+          <a href="home.html" class="navbar-brand pe-3">
             <img src="assets/img/logo.svg" width="47" alt="SecuritySage">
             SecuritySage
           </a>
@@ -158,16 +159,15 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Journey</a>
+                  <a href="index.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Journey</a>
                   <div class="dropdown-menu p-0">
                     <div class="d-lg-flex">
                       <div class="mega-dropdown-column pt-lg-2 pb-lg-4" style="--si-mega-dropdown-column-width: 15rem;">
                         <ul class="list-unstyled mb-0">
+                          <li><a href="index.html" class="dropdown-item">Overview</a></li>
                           <li><a href="cmmc-level1-scoping.html" class="dropdown-item">Level 1 Scoping</a></li>
                           <li><a href="cmmc-level1-self-assessment.html" class="dropdown-item">Level 1 Self-Assessment</a></li>
-                          <li><a href="#" class="dropdown-item d-flex align-items-center">Level 2 Scoping<span class="badge bg-success ms-1">TBD</span></a></li>
-                          <li><a href="#" class="dropdown-item">Level 2 Self-Assessment<span class="badge bg-success ms-1">TBD</span></a></li>
-                          <li><a href="#" class="dropdown-item">Completing Your Journey<span class="badge bg-success ms-1">TBD</span></a></li>
+                          <li><a href="complete-journey.html" class="dropdown-item">Completing Your Journey</a></li>
                         </ul>
                       </div>
                     </div>
@@ -179,13 +179,6 @@
               </ul>
             </div>
           </div>
-          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a href="account-details.html" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
-            <i class="bx bxs-user-account fs-5 lh-1 me-1"></i>
-            &nbsp;Account
-          </a>
         </div>
       </header> 
 
@@ -199,9 +192,9 @@
           <nav class="py-4" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item">
-                <a href="landing-online-courses.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+                <a href="home.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
               </li>
-              <li class="breadcrumb-item active" aria-current="page">Journey</li>
+              <li class="breadcrumb-item active" aria-current="page">Journey Overview</li>
             </ol>
           </nav>
 
@@ -233,26 +226,8 @@
                 <div class="step-number-inner">3</div>
               </div>
               <div class="step-body">
-                <h4 class="mb-2">Level 2 Scoping</h4>
-                <p class="mb-0"><i>Upcming</i></p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-number">
-                <div class="step-number-inner">4</div>
-              </div>
-              <div class="step-body">
-                <h4 class="mb-2">Level 2 Self-Assessment</h4>
-                <p class="mb-0"><i>Upcming</i></p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-number">
-                <div class="step-number-inner">5</div>
-              </div>
-              <div class="step-body">
                 <h4 class="mb-2">Completing Your Journey</h4>
-                <p class="mb-0"><i>Upcming</i></p>
+                <p class="mb-0">Find support in connecting with continued advisory and implementation partners.</p>
               </div>
             </div>
             </div>
@@ -350,12 +325,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer pt-2 pb-4 pb-lg-2">
+    <footer class="footer bg-dark border-top border-light pt-2 pb-4 pb-lg-2" data-bs-theme="dark">
       <div class="container pt-lg-2">
+<div class="row pb-lg-1">
+        </div>
         <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+<!-- Toggle popover on click (click is default trigger) -->
           <button type="button" class="btn btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="This website is for educational purposes only and does not render professional services - it is not a substitute for dedicated professional services from a cybersecurity professional. There is no endorsement of any kind for products or services listed on this website - It is your responsibility to conduct appropriate due diligence and due care in selecting and engaging with a product or service in your implementation of the CMMC practices and processes.">Disclaimer</button>
           <h6></h6>
-          &copy; Copyright © 2023 SecuritySage  
+          <span class="text-light opacity-50"></span>&copy; Copyright © 2023 SecuritySage </span>  
         </p>
       </div>
     </footer>
